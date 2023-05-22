@@ -1,0 +1,11 @@
+# ninja log v5
+1	49	1684750242472013990	CMakeFiles/glfwapp.dir/Application.cpp.o	982efe1e913e0a9d
+1	131	1684750242553423849	CMakeFiles/glfwapp.dir/glloader/src/glad.c.o	3c88d0962b6ed6f4
+0	339	1684750242761205297	CMakeFiles/glfwapp.dir/main.cpp.o	1e26c6c92d6a412a
+0	341	1684750242763434354	CMakeFiles/glfwapp.dir/GLFWApplication.cpp.o	2d863bacafac3ae6
+341	374	1684750242798124304	glfwapp	945e81bcc06e9483
+2	292	1684750271873728260	CMakeFiles/glfwapp.dir/main.cpp.o	1e26c6c92d6a412a
+292	329	1684750271911762567	glfwapp	945e81bcc06e9483
+2	320	1684750344967534117	CMakeFiles/glfwapp.dir/GLFWApplication.cpp.o	2d863bacafac3ae6
+2	326	1684750344973145073	CMakeFiles/glfwapp.dir/main.cpp.o	1e26c6c92d6a412a
+326	360	1684750345008163359	glfwapp	945e81bcc06e9483
