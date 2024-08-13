@@ -679,7 +679,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1078,6 +1078,42 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "CV_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/shivaaz/Projects/GLFWApp/cmake-build-debug/mycv"
+		},
+		{
+			"name" : "CV_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "CV_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/shivaaz/Projects/GLFWApp/CV"
+		},
+		{
 			"name" : "FFmpeg_BINARY_DIR",
 			"properties" : 
 			[
@@ -1148,6 +1184,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/shivaaz/Projects/GLFWApp"
+		},
+		{
+			"name" : "ksgraphics_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/shivaaz/Projects/GLFWApp/cmake-build-debug/ksgraphics"
+		},
+		{
+			"name" : "ksgraphics_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "ksgraphics_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/shivaaz/Projects/GLFWApp/Graphics"
 		}
 	],
 	"kind" : "cache",

@@ -6,6 +6,7 @@
 #define GLFW_GLFWAPPLICATION_H
 
 #include "Application.hpp"
+#include "glad/glad.h"
 
 class GLFWwindow;
 class GLFWApplication : public  KSApplication{
@@ -22,6 +23,11 @@ protected:
     void onDestroy() override;
 
     GLFWwindow* window = nullptr;
+
+private:
+
+    bool compileShaders();
+    GLuint textureProg = 0;
 
 
 };

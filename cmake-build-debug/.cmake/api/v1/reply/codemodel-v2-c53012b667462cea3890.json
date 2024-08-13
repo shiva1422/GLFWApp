@@ -1,0 +1,138 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "mycv",
+					"jsonFile" : "directory-mycv-Debug-4051743377c21ea0fff5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "CV",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "ksgraphics",
+					"jsonFile" : "directory-ksgraphics-Debug-3b2eeaef55957d111619.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Graphics",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "GLFWApp",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "CV",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "ksgraphics",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "glfwapp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glfwapp-Debug-884eeb0a7b95682dee5f.json",
+					"name" : "glfwapp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ksgraphics::@9bb71b16561988468148",
+					"jsonFile" : "target-ksgraphics-Debug-8e9e7a61fe6dcc7027e9.json",
+					"name" : "ksgraphics",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "mycv::@3fc667fc8c3586a0c0a9",
+					"jsonFile" : "target-mycv-Debug-9e8e38794b901d29e2f5.json",
+					"name" : "mycv",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/shivaaz/Projects/GLFWApp/cmake-build-debug",
+		"source" : "/Users/shivaaz/Projects/GLFWApp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

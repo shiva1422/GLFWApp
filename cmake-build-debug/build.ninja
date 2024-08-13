@@ -47,7 +47,7 @@ cmake_ninja_workdir = /Users/shivaaz/Projects/GLFWApp/cmake-build-debug/
 #############################################
 # Order-only phony target for glfwapp
 
-build cmake_object_order_depends_target_glfwapp: phony || CMakeFiles/glfwapp.dir
+build cmake_object_order_depends_target_glfwapp: phony || cmake_object_order_depends_target_ksgraphics cmake_object_order_depends_target_mycv
 
 build CMakeFiles/glfwapp.dir/main.cpp.o: CXX_COMPILER__glfwapp_Debug /Users/shivaaz/Projects/GLFWApp/main.cpp || cmake_object_order_depends_target_glfwapp
   DEP_FILE = CMakeFiles/glfwapp.dir/main.cpp.o.d
@@ -77,6 +77,20 @@ build CMakeFiles/glfwapp.dir/glloader/src/glad.c.o: C_COMPILER__glfwapp_Debug /U
   OBJECT_DIR = CMakeFiles/glfwapp.dir
   OBJECT_FILE_DIR = CMakeFiles/glfwapp.dir/glloader/src
 
+build CMakeFiles/glfwapp.dir/CV/cv_main.cpp.o: CXX_COMPILER__glfwapp_Debug /Users/shivaaz/Projects/GLFWApp/CV/cv_main.cpp || cmake_object_order_depends_target_glfwapp
+  DEP_FILE = CMakeFiles/glfwapp.dir/CV/cv_main.cpp.o.d
+  FLAGS = -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
+  INCLUDES = -I/opt/homebrew/Cellar/glfw/3.3.8/include -I/Users/shivaaz/Projects/GLFWApp/glloader/include
+  OBJECT_DIR = CMakeFiles/glfwapp.dir
+  OBJECT_FILE_DIR = CMakeFiles/glfwapp.dir/CV
+
+build CMakeFiles/glfwapp.dir/KSIO/KSFileStream.cpp.o: CXX_COMPILER__glfwapp_Debug /Users/shivaaz/Projects/GLFWApp/KSIO/KSFileStream.cpp || cmake_object_order_depends_target_glfwapp
+  DEP_FILE = CMakeFiles/glfwapp.dir/KSIO/KSFileStream.cpp.o.d
+  FLAGS = -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
+  INCLUDES = -I/opt/homebrew/Cellar/glfw/3.3.8/include -I/Users/shivaaz/Projects/GLFWApp/glloader/include
+  OBJECT_DIR = CMakeFiles/glfwapp.dir
+  OBJECT_FILE_DIR = CMakeFiles/glfwapp.dir/KSIO
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target glfwapp
@@ -85,9 +99,9 @@ build CMakeFiles/glfwapp.dir/glloader/src/glad.c.o: C_COMPILER__glfwapp_Debug /U
 #############################################
 # Link the executable glfwapp
 
-build glfwapp: CXX_EXECUTABLE_LINKER__glfwapp_Debug CMakeFiles/glfwapp.dir/main.cpp.o CMakeFiles/glfwapp.dir/GLFWApplication.cpp.o CMakeFiles/glfwapp.dir/Application.cpp.o CMakeFiles/glfwapp.dir/glloader/src/glad.c.o | /opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib
+build glfwapp: CXX_EXECUTABLE_LINKER__glfwapp_Debug CMakeFiles/glfwapp.dir/main.cpp.o CMakeFiles/glfwapp.dir/GLFWApplication.cpp.o CMakeFiles/glfwapp.dir/Application.cpp.o CMakeFiles/glfwapp.dir/glloader/src/glad.c.o CMakeFiles/glfwapp.dir/CV/cv_main.cpp.o CMakeFiles/glfwapp.dir/KSIO/KSFileStream.cpp.o | /opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib mycv/libmycv.a ksgraphics/libksgraphics.a || ksgraphics/libksgraphics.a mycv/libmycv.a
   FLAGS = -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
-  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/Cellar/glfw/3.3.8/lib  /opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib
+  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/Cellar/glfw/3.3.8/lib  /opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib  mycv/libmycv.a  ksgraphics/libksgraphics.a
   LINK_PATH = -L/opt/homebrew/Cellar/glfw/3.3.8/lib
   OBJECT_DIR = CMakeFiles/glfwapp.dir
   POST_BUILD = :
@@ -119,7 +133,137 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/shivaaz/Projects/GLFWApp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target mycv
+
+
+#############################################
+# Order-only phony target for mycv
+
+build cmake_object_order_depends_target_mycv: phony || mycv/CMakeFiles/mycv.dir
+
+build mycv/CMakeFiles/mycv.dir/cv_main.cpp.o: CXX_COMPILER__mycv_Debug /Users/shivaaz/Projects/GLFWApp/CV/cv_main.cpp || cmake_object_order_depends_target_mycv
+  DEP_FILE = mycv/CMakeFiles/mycv.dir/cv_main.cpp.o.d
+  FLAGS = -std=c++17 -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
+  INCLUDES = -I/opt/homebrew/Cellar/glfw/3.3.8/include -I/Users/shivaaz/Projects/GLFWApp/glloader/include -I/Users/shivaaz/Projects/cv/opencv/modules
+  OBJECT_DIR = mycv/CMakeFiles/mycv.dir
+  OBJECT_FILE_DIR = mycv/CMakeFiles/mycv.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target mycv
+
+
+#############################################
+# Link the static library mycv/libmycv.a
+
+build mycv/libmycv.a: CXX_STATIC_LIBRARY_LINKER__mycv_Debug mycv/CMakeFiles/mycv.dir/cv_main.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LANGUAGE_COMPILE_FLAGS = -std=c++17 -std=c++17 -g
+  OBJECT_DIR = mycv/CMakeFiles/mycv.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = mycv/libmycv.a
+  TARGET_PDB = mycv.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build mycv/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shivaaz/Projects/GLFWApp/cmake-build-debug/mycv && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build mycv/edit_cache: phony mycv/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build mycv/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shivaaz/Projects/GLFWApp/cmake-build-debug/mycv && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/shivaaz/Projects/GLFWApp -B/Users/shivaaz/Projects/GLFWApp/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build mycv/rebuild_cache: phony mycv/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/shivaaz/Projects/GLFWApp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ksgraphics
+
+
+#############################################
+# Order-only phony target for ksgraphics
+
+build cmake_object_order_depends_target_ksgraphics: phony || ksgraphics/CMakeFiles/ksgraphics.dir
+
+build ksgraphics/CMakeFiles/ksgraphics.dir/Shader.cpp.o: CXX_COMPILER__ksgraphics_Debug /Users/shivaaz/Projects/GLFWApp/Graphics/Shader.cpp || cmake_object_order_depends_target_ksgraphics
+  DEP_FILE = ksgraphics/CMakeFiles/ksgraphics.dir/Shader.cpp.o.d
+  FLAGS = -std=c++17 -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
+  INCLUDES = -I/opt/homebrew/Cellar/glfw/3.3.8/include -I/Users/shivaaz/Projects/GLFWApp/glloader/include
+  OBJECT_DIR = ksgraphics/CMakeFiles/ksgraphics.dir
+  OBJECT_FILE_DIR = ksgraphics/CMakeFiles/ksgraphics.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ksgraphics
+
+
+#############################################
+# Link the static library ksgraphics/libksgraphics.a
+
+build ksgraphics/libksgraphics.a: CXX_STATIC_LIBRARY_LINKER__ksgraphics_Debug ksgraphics/CMakeFiles/ksgraphics.dir/Shader.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LANGUAGE_COMPILE_FLAGS = -std=c++17 -std=c++17 -g
+  OBJECT_DIR = ksgraphics/CMakeFiles/ksgraphics.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ksgraphics/libksgraphics.a
+  TARGET_PDB = ksgraphics.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build ksgraphics/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shivaaz/Projects/GLFWApp/cmake-build-debug/ksgraphics && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build ksgraphics/edit_cache: phony ksgraphics/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build ksgraphics/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shivaaz/Projects/GLFWApp/cmake-build-debug/ksgraphics && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/shivaaz/Projects/GLFWApp -B/Users/shivaaz/Projects/GLFWApp/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build ksgraphics/rebuild_cache: phony ksgraphics/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
+
+build ksgraphics: phony ksgraphics/libksgraphics.a
+
+build libksgraphics.a: phony ksgraphics/libksgraphics.a
+
+build libmycv.a: phony mycv/libmycv.a
+
+build mycv: phony mycv/libmycv.a
 
 # =============================================================================
 # Folder targets.
@@ -129,7 +273,21 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/shivaaz/Projects/GLFWApp/cmake-build-debug
 
-build all: phony glfwapp
+build all: phony glfwapp mycv/all ksgraphics/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/shivaaz/Projects/GLFWApp/cmake-build-debug/ksgraphics
+
+build ksgraphics/all: phony ksgraphics/libksgraphics.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/shivaaz/Projects/GLFWApp/cmake-build-debug/mycv
+
+build mycv/all: phony mycv/libmycv.a
 
 # =============================================================================
 # Built-in targets
@@ -138,14 +296,14 @@ build all: phony glfwapp
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../CV/CMakeLists.txt ../Graphics/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../CV/CMakeLists.txt ../Graphics/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -145,6 +145,12 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "CV/CMakeLists.txt"
+		},
+		{
+			"path" : "Graphics/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
