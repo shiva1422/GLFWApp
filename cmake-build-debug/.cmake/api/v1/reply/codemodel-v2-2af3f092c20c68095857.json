@@ -20,7 +20,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				},
 				{
@@ -35,7 +36,7 @@
 					"source" : "CV",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -50,7 +51,7 @@
 					"source" : "Graphics",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				}
 			],
@@ -70,7 +71,8 @@
 					"name" : "GLFWApp",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				},
 				{
@@ -82,7 +84,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -94,7 +96,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				}
 			],
@@ -102,9 +104,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "glfwapp::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-glfwapp-Debug-884eeb0a7b95682dee5f.json",
-					"name" : "glfwapp",
+					"id" : "glfwApp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glfwApp-Debug-51553cc66281380700de.json",
+					"name" : "glfwApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "glfwmain::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glfwmain-Debug-6ba8be13516070f30853.json",
+					"name" : "glfwmain",
 					"projectIndex" : 0
 				},
 				{

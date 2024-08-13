@@ -1,4 +1,5 @@
-/Users/shivaaz/Projects/GLFWApp/cmake-build-debug/CMakeFiles/glfwapp.dir
+/Users/shivaaz/Projects/GLFWApp/cmake-build-debug/CMakeFiles/glfwApp.dir
+/Users/shivaaz/Projects/GLFWApp/cmake-build-debug/CMakeFiles/glfwmain.dir
 /Users/shivaaz/Projects/GLFWApp/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/shivaaz/Projects/GLFWApp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/shivaaz/Projects/GLFWApp/cmake-build-debug/mycv/CMakeFiles/mycv.dir

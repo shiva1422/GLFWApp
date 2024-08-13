@@ -18,11 +18,14 @@ public:
     void run() override;
 
 protected:
+
     void onWindowInit() override;
 
     void onDestroy() override;
 
     GLFWwindow* window = nullptr;
+
+    virtual void onDraw(){};
 
 private:
 

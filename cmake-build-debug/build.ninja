@@ -41,73 +41,99 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/shivaaz/Projects/GLFWApp/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target glfwapp
+# Object build statements for STATIC_LIBRARY target glfwApp
 
 
 #############################################
-# Order-only phony target for glfwapp
+# Order-only phony target for glfwApp
 
-build cmake_object_order_depends_target_glfwapp: phony || cmake_object_order_depends_target_ksgraphics cmake_object_order_depends_target_mycv
+build cmake_object_order_depends_target_glfwApp: phony || CMakeFiles/glfwApp.dir
 
-build CMakeFiles/glfwapp.dir/main.cpp.o: CXX_COMPILER__glfwapp_Debug /Users/shivaaz/Projects/GLFWApp/main.cpp || cmake_object_order_depends_target_glfwapp
-  DEP_FILE = CMakeFiles/glfwapp.dir/main.cpp.o.d
+build CMakeFiles/glfwApp.dir/GLFWApplication.cpp.o: CXX_COMPILER__glfwApp_Debug /Users/shivaaz/Projects/GLFWApp/GLFWApplication.cpp || cmake_object_order_depends_target_glfwApp
+  DEP_FILE = CMakeFiles/glfwApp.dir/GLFWApplication.cpp.o.d
   FLAGS = -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
   INCLUDES = -I/opt/homebrew/Cellar/glfw/3.3.8/include -I/Users/shivaaz/Projects/GLFWApp/glloader/include
-  OBJECT_DIR = CMakeFiles/glfwapp.dir
-  OBJECT_FILE_DIR = CMakeFiles/glfwapp.dir
+  OBJECT_DIR = CMakeFiles/glfwApp.dir
+  OBJECT_FILE_DIR = CMakeFiles/glfwApp.dir
 
-build CMakeFiles/glfwapp.dir/GLFWApplication.cpp.o: CXX_COMPILER__glfwapp_Debug /Users/shivaaz/Projects/GLFWApp/GLFWApplication.cpp || cmake_object_order_depends_target_glfwapp
-  DEP_FILE = CMakeFiles/glfwapp.dir/GLFWApplication.cpp.o.d
+build CMakeFiles/glfwApp.dir/Application.cpp.o: CXX_COMPILER__glfwApp_Debug /Users/shivaaz/Projects/GLFWApp/Application.cpp || cmake_object_order_depends_target_glfwApp
+  DEP_FILE = CMakeFiles/glfwApp.dir/Application.cpp.o.d
   FLAGS = -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
   INCLUDES = -I/opt/homebrew/Cellar/glfw/3.3.8/include -I/Users/shivaaz/Projects/GLFWApp/glloader/include
-  OBJECT_DIR = CMakeFiles/glfwapp.dir
-  OBJECT_FILE_DIR = CMakeFiles/glfwapp.dir
+  OBJECT_DIR = CMakeFiles/glfwApp.dir
+  OBJECT_FILE_DIR = CMakeFiles/glfwApp.dir
 
-build CMakeFiles/glfwapp.dir/Application.cpp.o: CXX_COMPILER__glfwapp_Debug /Users/shivaaz/Projects/GLFWApp/Application.cpp || cmake_object_order_depends_target_glfwapp
-  DEP_FILE = CMakeFiles/glfwapp.dir/Application.cpp.o.d
-  FLAGS = -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
-  INCLUDES = -I/opt/homebrew/Cellar/glfw/3.3.8/include -I/Users/shivaaz/Projects/GLFWApp/glloader/include
-  OBJECT_DIR = CMakeFiles/glfwapp.dir
-  OBJECT_FILE_DIR = CMakeFiles/glfwapp.dir
-
-build CMakeFiles/glfwapp.dir/glloader/src/glad.c.o: C_COMPILER__glfwapp_Debug /Users/shivaaz/Projects/GLFWApp/glloader/src/glad.c || cmake_object_order_depends_target_glfwapp
-  DEP_FILE = CMakeFiles/glfwapp.dir/glloader/src/glad.c.o.d
+build CMakeFiles/glfwApp.dir/glloader/src/glad.c.o: C_COMPILER__glfwApp_Debug /Users/shivaaz/Projects/GLFWApp/glloader/src/glad.c || cmake_object_order_depends_target_glfwApp
+  DEP_FILE = CMakeFiles/glfwApp.dir/glloader/src/glad.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
   INCLUDES = -I/opt/homebrew/Cellar/glfw/3.3.8/include -I/Users/shivaaz/Projects/GLFWApp/glloader/include
-  OBJECT_DIR = CMakeFiles/glfwapp.dir
-  OBJECT_FILE_DIR = CMakeFiles/glfwapp.dir/glloader/src
+  OBJECT_DIR = CMakeFiles/glfwApp.dir
+  OBJECT_FILE_DIR = CMakeFiles/glfwApp.dir/glloader/src
 
-build CMakeFiles/glfwapp.dir/CV/cv_main.cpp.o: CXX_COMPILER__glfwapp_Debug /Users/shivaaz/Projects/GLFWApp/CV/cv_main.cpp || cmake_object_order_depends_target_glfwapp
-  DEP_FILE = CMakeFiles/glfwapp.dir/CV/cv_main.cpp.o.d
+build CMakeFiles/glfwApp.dir/CV/cv_main.cpp.o: CXX_COMPILER__glfwApp_Debug /Users/shivaaz/Projects/GLFWApp/CV/cv_main.cpp || cmake_object_order_depends_target_glfwApp
+  DEP_FILE = CMakeFiles/glfwApp.dir/CV/cv_main.cpp.o.d
   FLAGS = -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
   INCLUDES = -I/opt/homebrew/Cellar/glfw/3.3.8/include -I/Users/shivaaz/Projects/GLFWApp/glloader/include
-  OBJECT_DIR = CMakeFiles/glfwapp.dir
-  OBJECT_FILE_DIR = CMakeFiles/glfwapp.dir/CV
+  OBJECT_DIR = CMakeFiles/glfwApp.dir
+  OBJECT_FILE_DIR = CMakeFiles/glfwApp.dir/CV
 
-build CMakeFiles/glfwapp.dir/KSIO/KSFileStream.cpp.o: CXX_COMPILER__glfwapp_Debug /Users/shivaaz/Projects/GLFWApp/KSIO/KSFileStream.cpp || cmake_object_order_depends_target_glfwapp
-  DEP_FILE = CMakeFiles/glfwapp.dir/KSIO/KSFileStream.cpp.o.d
+build CMakeFiles/glfwApp.dir/KSIO/KSFileStream.cpp.o: CXX_COMPILER__glfwApp_Debug /Users/shivaaz/Projects/GLFWApp/KSIO/KSFileStream.cpp || cmake_object_order_depends_target_glfwApp
+  DEP_FILE = CMakeFiles/glfwApp.dir/KSIO/KSFileStream.cpp.o.d
   FLAGS = -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
   INCLUDES = -I/opt/homebrew/Cellar/glfw/3.3.8/include -I/Users/shivaaz/Projects/GLFWApp/glloader/include
-  OBJECT_DIR = CMakeFiles/glfwapp.dir
-  OBJECT_FILE_DIR = CMakeFiles/glfwapp.dir/KSIO
+  OBJECT_DIR = CMakeFiles/glfwApp.dir
+  OBJECT_FILE_DIR = CMakeFiles/glfwApp.dir/KSIO
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target glfwapp
+# Link build statements for STATIC_LIBRARY target glfwApp
 
 
 #############################################
-# Link the executable glfwapp
+# Link the static library libglfwApp.a
 
-build glfwapp: CXX_EXECUTABLE_LINKER__glfwapp_Debug CMakeFiles/glfwapp.dir/main.cpp.o CMakeFiles/glfwapp.dir/GLFWApplication.cpp.o CMakeFiles/glfwapp.dir/Application.cpp.o CMakeFiles/glfwapp.dir/glloader/src/glad.c.o CMakeFiles/glfwapp.dir/CV/cv_main.cpp.o CMakeFiles/glfwapp.dir/KSIO/KSFileStream.cpp.o | /opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib mycv/libmycv.a ksgraphics/libksgraphics.a || ksgraphics/libksgraphics.a mycv/libmycv.a
-  FLAGS = -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
-  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/Cellar/glfw/3.3.8/lib  /opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib  mycv/libmycv.a  ksgraphics/libksgraphics.a
-  LINK_PATH = -L/opt/homebrew/Cellar/glfw/3.3.8/lib
-  OBJECT_DIR = CMakeFiles/glfwapp.dir
+build libglfwApp.a: CXX_STATIC_LIBRARY_LINKER__glfwApp_Debug CMakeFiles/glfwApp.dir/GLFWApplication.cpp.o CMakeFiles/glfwApp.dir/Application.cpp.o CMakeFiles/glfwApp.dir/glloader/src/glad.c.o CMakeFiles/glfwApp.dir/CV/cv_main.cpp.o CMakeFiles/glfwApp.dir/KSIO/KSFileStream.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LANGUAGE_COMPILE_FLAGS = -std=c++17 -g
+  OBJECT_DIR = CMakeFiles/glfwApp.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = glfwapp
-  TARGET_PDB = glfwapp.dbg
+  TARGET_FILE = libglfwApp.a
+  TARGET_PDB = glfwApp.a.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target glfwmain
+
+
+#############################################
+# Order-only phony target for glfwmain
+
+build cmake_object_order_depends_target_glfwmain: phony || cmake_object_order_depends_target_glfwApp cmake_object_order_depends_target_ksgraphics cmake_object_order_depends_target_mycv
+
+build CMakeFiles/glfwmain.dir/main.cpp.o: CXX_COMPILER__glfwmain_Debug /Users/shivaaz/Projects/GLFWApp/main.cpp || cmake_object_order_depends_target_glfwmain
+  DEP_FILE = CMakeFiles/glfwmain.dir/main.cpp.o.d
+  FLAGS = -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++14
+  INCLUDES = -I/opt/homebrew/Cellar/glfw/3.3.8/include -I/Users/shivaaz/Projects/GLFWApp/glloader/include
+  OBJECT_DIR = CMakeFiles/glfwmain.dir
+  OBJECT_FILE_DIR = CMakeFiles/glfwmain.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target glfwmain
+
+
+#############################################
+# Link the executable glfwmain
+
+build glfwmain: CXX_EXECUTABLE_LINKER__glfwmain_Debug CMakeFiles/glfwmain.dir/main.cpp.o | /opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib mycv/libmycv.a ksgraphics/libksgraphics.a libglfwApp.a || ksgraphics/libksgraphics.a libglfwApp.a mycv/libmycv.a
+  FLAGS = -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
+  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/Cellar/glfw/3.3.8/lib  /opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib  mycv/libmycv.a  ksgraphics/libksgraphics.a  libglfwApp.a
+  LINK_PATH = -L/opt/homebrew/Cellar/glfw/3.3.8/lib
+  OBJECT_DIR = CMakeFiles/glfwmain.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = glfwmain
+  TARGET_PDB = glfwmain.dbg
 
 
 #############################################
@@ -257,6 +283,8 @@ build ksgraphics/rebuild_cache: phony ksgraphics/CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build glfwApp: phony libglfwApp.a
+
 build ksgraphics: phony ksgraphics/libksgraphics.a
 
 build libksgraphics.a: phony ksgraphics/libksgraphics.a
@@ -273,7 +301,7 @@ build mycv: phony mycv/libmycv.a
 #############################################
 # Folder: /Users/shivaaz/Projects/GLFWApp/cmake-build-debug
 
-build all: phony glfwapp mycv/all ksgraphics/all
+build all: phony libglfwApp.a glfwmain mycv/all ksgraphics/all
 
 # =============================================================================
 

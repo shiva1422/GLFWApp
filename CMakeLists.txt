@@ -15,8 +15,11 @@ set(GLFW_LIBRARIES ${GLFW_DIR}/lib/libglfw.3.3.dylib )
 add_subdirectory(CV mycv)
 add_subdirectory(./Graphics ksgraphics)
 
-add_executable(glfwapp main.cpp GLFWApplication.cpp GLFWApplication.h Application.cpp glloader/src/glad.c CV/cv_main.cpp KSIO/KSFileStream.cpp KSIO/KSFileStream.h)
-target_link_libraries(glfwapp ${GLFW_LIBRARIES} mycv ksgraphics)
+add_library(glfwApp STATIC GLFWApplication.cpp GLFWApplication.h Application.cpp glloader/src/glad.c CV/cv_main.cpp KSIO/KSFileStream.cpp KSIO/KSFileStream.h)
+
+add_executable(glfwmain main.cpp)
+
+target_link_libraries(glfwmain ${GLFW_LIBRARIES} mycv ksgraphics glfwApp)
 
 
 
